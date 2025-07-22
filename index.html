@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StreamClub - Plataformas Digitales</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>StreamClub - Plataformas Digitales al Mejor Precio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <style>
     body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; }
     .navbar { background-color: #1a1a1a; }
@@ -14,6 +15,18 @@
     .product-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
     .product-card img { max-width: 100px; }
     .footer { background: #1a1a1a; color: white; padding: 20px 0; text-align: center; }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 <body>
@@ -26,7 +39,6 @@
           <li class="nav-item"><a class="nav-link" href="#productos">Plataformas</a></li>
           <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo Funciona</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-warning text-dark ms-3" href="/StreamClub-S-S/ofertas.html">🎁 Ofertas</a></li>
         </ul>
       </div>
     </div>
@@ -42,7 +54,7 @@
   <section id="productos" class="container py-5">
     <div class="row">
       <div class="col-md-3">
-        <div class="product-card text-center">
+        <div class="product-card text-center" data-aos="fade-up">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
           <h4>Netflix</h4>
           <p>Acceso Personal 30 días</p>
@@ -51,7 +63,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="product-card text-center">
+        <div class="product-card text-center" data-aos="fade-up" data-aos-delay="100">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+">
           <h4>Disney+</h4>
           <p>Acceso Personal 30 días</p>
@@ -60,7 +72,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="product-card text-center">
+        <div class="product-card text-center" data-aos="fade-up" data-aos-delay="200">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg" alt="HBO Max">
           <h4>HBO Max</h4>
           <p>Acceso Personal 30 días</p>
@@ -69,7 +81,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="product-card text-center">
+        <div class="product-card text-center" data-aos="fade-up" data-aos-delay="300">
           <img src="https://cdn-icons-png.flaticon.com/512/5357/5357092.png" alt="IPTV">
           <h4>IPTV</h4>
           <p>Más de 500 canales + Películas</p>
@@ -100,11 +112,23 @@
     <p class="text-center">O al correo de soporte: <strong>titosamo34@gmail.com</strong></p>
   </section>
 
+  <a class="whatsapp-btn" href="https://wa.me/59161231462?text=Hola%2C%20quiero%20adquirir%20una%20plataforma%20de%20streaming" target="_blank">
+    💬 Comprar por WhatsApp
+  </a>
+
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 StreamClub. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 </html>
